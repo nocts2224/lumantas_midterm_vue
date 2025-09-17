@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-md fixed-top py-3">
       <div class="container">
         <!-- Brand -->
-        <h1 class="navbar-brand text-success fw-bold fs-3 mb-0">Car Shop</h1>
+        <h1 class="navbar-brand text-light fw-bold fs-3 mb-0">Car Shop</h1>
 
         <!-- Links -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">

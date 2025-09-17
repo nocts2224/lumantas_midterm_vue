@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center min-vh-100 bg-light mt-5">
+  <div class="d-flex justify-content-center align-items-center min-vh-100 bg-gray mt-5">
     <div class="card shadow-lg p-4" style="width: 28rem;">
       <h2 class="mb-4 text-dark text-center">User Registration</h2>
       <form @submit.prevent="handleSubmit" class="needs-validation" novalidate>

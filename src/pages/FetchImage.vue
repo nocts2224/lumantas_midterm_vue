@@ -10,19 +10,20 @@
           id="carId"
           placeholder="Enter ID Number"
           v-model="carId"
-          type="number"
+          type="text"
           required
         />
-        <button class="btn btn-success mt-4">Fetch Car Image</button>
+        <button class="btn btn-dark mt-4">Fetch Car Image</button>
       </form>
 
       <div v-if="loading">Loading Car Image....</div>
       <p v-if="error" class="error">{{ error }}</p>
 
       <div v-if="car" class="card shadow-md mt-5 bg-light">
-        <h2 class="text text-primary">Result:</h2>
+        <h2 class="text text-dark">Result:</h2>
         <p><strong>Brand: </strong>{{ car.brand }}</p>
         <img v-if="car.url" :src="car.url" :alt="car.brand" class="car-image" />
+        <button class ="btn btn-dark mt-4">Add to Garage?</button>
       </div>
     </div>
   </div>
@@ -48,7 +49,6 @@ const handleSubmit = async () => {
 
     const data = await response.json()
 
-    // if cars.json is a single object
     if (!Array.isArray(data)) {
       if (data.id === Number(carId.value)) {
         car.value = data
